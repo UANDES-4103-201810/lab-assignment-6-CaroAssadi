@@ -14,6 +14,10 @@ class ApplicationController < ActionController::Base
 	#complete this method
     current_user.present?
   	logged_in = false
-	if logged_in then true else redirect_to root_path end 
+	  if logged_in
+      then true
+    else
+      redirect_to root_path
+    end
   end
 end
