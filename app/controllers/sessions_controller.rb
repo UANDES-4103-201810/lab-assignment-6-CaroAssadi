@@ -12,7 +12,6 @@ class SessionsController < ApplicationController
 			session[:user]=user
 
 
-			cookies.permanent.signed[:user_id] = @user.id
 			flash.now[:notice] = "User logged in successfully"
 			redirect_to user_path(user)
 		else
